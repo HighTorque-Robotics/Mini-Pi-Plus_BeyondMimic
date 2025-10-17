@@ -1,0 +1,23 @@
+2025-10-15 11:47:45,116 INFO    MainThread:2104712 [wandb_setup.py:_flush():81] Current SDK version is 0.22.2
+2025-10-15 11:47:45,116 INFO    MainThread:2104712 [wandb_setup.py:_flush():81] Configure stats pid to 2104712
+2025-10-15 11:47:45,116 INFO    MainThread:2104712 [wandb_setup.py:_flush():81] Loading settings from /home/sunteng/.config/wandb/settings
+2025-10-15 11:47:45,116 INFO    MainThread:2104712 [wandb_setup.py:_flush():81] Loading settings from /home/sunteng/beyondmimic/Pi_mimic_workshop-Pi_workshop_beyondmimic/wandb/settings
+2025-10-15 11:47:45,116 INFO    MainThread:2104712 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-10-15 11:47:45,116 INFO    MainThread:2104712 [wandb_init.py:setup_run_log_directory():705] Logging user logs to /home/sunteng/beyondmimic/Pi_mimic_workshop-Pi_workshop_beyondmimic/wandb/run-20251015_114745-8lwe55eb/logs/debug.log
+2025-10-15 11:47:45,116 INFO    MainThread:2104712 [wandb_init.py:setup_run_log_directory():706] Logging internal logs to /home/sunteng/beyondmimic/Pi_mimic_workshop-Pi_workshop_beyondmimic/wandb/run-20251015_114745-8lwe55eb/logs/debug-internal.log
+2025-10-15 11:47:45,116 INFO    MainThread:2104712 [wandb_init.py:init():832] calling init triggers
+2025-10-15 11:47:45,116 INFO    MainThread:2104712 [wandb_init.py:init():837] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-10-15 11:47:45,116 INFO    MainThread:2104712 [wandb_init.py:init():880] starting backend
+2025-10-15 11:47:45,331 INFO    MainThread:2104712 [wandb_init.py:init():883] sending inform_init request
+2025-10-15 11:47:45,340 INFO    MainThread:2104712 [wandb_init.py:init():891] backend started and connected
+2025-10-15 11:47:45,343 INFO    MainThread:2104712 [wandb_init.py:init():961] updated telemetry
+2025-10-15 11:47:45,344 INFO    MainThread:2104712 [wandb_init.py:init():985] communicating run to backend with 90.0 second timeout
+2025-10-15 11:47:47,732 INFO    MainThread:2104712 [wandb_init.py:init():1036] starting run threads in backend
+2025-10-15 11:47:47,880 INFO    MainThread:2104712 [wandb_run.py:_console_start():2509] atexit reg
+2025-10-15 11:47:47,880 INFO    MainThread:2104712 [wandb_run.py:_redirect():2357] redirect: wrap_raw
+2025-10-15 11:47:47,880 INFO    MainThread:2104712 [wandb_run.py:_redirect():2426] Wrapping output streams.
+2025-10-15 11:47:47,880 INFO    MainThread:2104712 [wandb_run.py:_redirect():2449] Redirects installed.
+2025-10-15 11:47:47,883 INFO    MainThread:2104712 [wandb_init.py:init():1076] run started, returning control to user process
+2025-10-15 11:48:03,365 INFO    wandb-AsyncioManager-main:2104712 [service_client.py:_forward_responses():80] Reached EOF.
+2025-10-15 11:48:03,365 INFO    wandb-AsyncioManager-main:2104712 [mailbox.py:close():137] Closing mailbox, abandoning 2 handles.

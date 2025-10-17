@@ -1,0 +1,43 @@
+[INFO]: Logging motion to wandb: kick1015
+[34m[1mwandb[0m: [32m[41mERROR[0m HTTP 404: cannot create registry. custom registries can only be created via the registries ui
+Traceback (most recent call last):
+  File "/home/sunteng/miniconda3/envs/bydmimic/lib/python3.10/site-packages/wandb/apis/normalize.py", line 27, in wrapper
+    return func(*args, **kwargs)
+  File "/home/sunteng/miniconda3/envs/bydmimic/lib/python3.10/site-packages/wandb/sdk/artifacts/artifact.py", line 2448, in link
+    data = self._client.execute(gql_op, variable_values=gql_vars)
+  File "/home/sunteng/miniconda3/envs/bydmimic/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 318, in wrapped_fn
+    return retrier(*args, **kargs)
+  File "/home/sunteng/miniconda3/envs/bydmimic/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 158, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/sunteng/miniconda3/envs/bydmimic/lib/python3.10/site-packages/wandb/apis/public/api.py", line 124, in execute
+    return self._client.execute(*args, **kwargs)
+  File "/home/sunteng/miniconda3/envs/bydmimic/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/sunteng/miniconda3/envs/bydmimic/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/sunteng/miniconda3/envs/bydmimic/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 70, in execute
+    request.raise_for_status()
+  File "/home/sunteng/isaacsim/exts/omni.pip.cloud/pip_prebundle/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/sunteng/beyondmimic/Pi_mimic_workshop-Pi_workshop_beyondmimic/scripts/csv_to_npz.py", line 446, in <module>
+    main()
+  File "/home/sunteng/beyondmimic/Pi_mimic_workshop-Pi_workshop_beyondmimic/scripts/csv_to_npz.py", line 441, in main
+    run_simulator(sim, scene, robot_config)
+  File "/home/sunteng/beyondmimic/Pi_mimic_workshop-Pi_workshop_beyondmimic/scripts/csv_to_npz.py", line 412, in run_simulator
+    run.link_artifact(artifact=logged_artifact, target_path=f"wandb-registry-{REGISTRY}/{COLLECTION}")
+  File "/home/sunteng/miniconda3/envs/bydmimic/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/sunteng/miniconda3/envs/bydmimic/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/home/sunteng/miniconda3/envs/bydmimic/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 444, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/sunteng/miniconda3/envs/bydmimic/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 3015, in link_artifact
+    return artifact.link(target.to_str(), aliases)
+  File "/home/sunteng/miniconda3/envs/bydmimic/lib/python3.10/site-packages/wandb/apis/normalize.py", line 44, in wrapper
+    raise CommError(message, error)
+wandb.errors.errors.CommError: HTTP 404: cannot create registry. custom registries can only be created via the registries ui

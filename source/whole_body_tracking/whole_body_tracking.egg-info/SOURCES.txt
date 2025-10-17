@@ -1,0 +1,9 @@
+pyproject.toml
+setup.py
+whole_body_tracking/__init__.py
+whole_body_tracking.egg-info/PKG-INFO
+whole_body_tracking.egg-info/SOURCES.txt
+whole_body_tracking.egg-info/dependency_links.txt
+whole_body_tracking.egg-info/not-zip-safe
+whole_body_tracking.egg-info/requires.txt
+whole_body_tracking.egg-info/top_level.txt

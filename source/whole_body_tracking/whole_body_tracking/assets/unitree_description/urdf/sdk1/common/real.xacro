@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:include filename="$(find unitree_description)/urdf/sdk1/common/ros2_control.xacro"/>
+
+    <ros2_control name="UnitreeSdk1" type="system">
+        <hardware>
+            <plugin>unitree/UnitreeSdk1</plugin>
+            <param name="power_limit">3</param>
+            <param name="robot_type">go1</param>
+        </hardware>
+        <xacro:leg_joint_interface prefix="LF"/>
+        <xacro:leg_joint_interface prefix="LH"/>
+        <xacro:leg_joint_interface prefix="RF"/>
+        <xacro:leg_joint_interface prefix="RH"/>
+    </ros2_control>
+
+</robot>

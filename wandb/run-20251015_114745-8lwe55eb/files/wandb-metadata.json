@@ -1,0 +1,46 @@
+{
+  "os": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+  "python": "CPython 3.10.17",
+  "startedAt": "2025-10-15T03:47:45.113774Z",
+  "args": [
+    "--robot",
+    "pi_plus",
+    "--input_file",
+    "source/motion/hightorque/pi_plus/csv/pi_plus_right_big_kick_cut.csv",
+    "--input_fps",
+    "30",
+    "--output_name",
+    "source/motion/hightorque/pi_plus/npz/kick1015.npz"
+  ],
+  "program": "/home/sunteng/beyondmimic/Pi_mimic_workshop-Pi_workshop_beyondmimic/scripts/csv_to_npz.py",
+  "codePath": "scripts/csv_to_npz.py",
+  "codePathLocal": "scripts/csv_to_npz.py",
+  "email": "2742974891@qq.com",
+  "root": "/home/sunteng/beyondmimic/Pi_mimic_workshop-Pi_workshop_beyondmimic",
+  "host": "zixiang",
+  "executable": "/home/sunteng/miniconda3/envs/bydmimic/bin/python",
+  "cpu_count": 20,
+  "cpu_count_logical": 28,
+  "gpu": "NVIDIA GeForce RTX 4060 Ti",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "982820896768",
+      "used": "409662173184"
+    }
+  },
+  "memory": {
+    "total": "33468534784"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 4060 Ti",
+      "memoryTotal": "17175674880",
+      "cudaCores": 4352,
+      "architecture": "Ada",
+      "uuid": "GPU-d43cb428-abb2-9686-d48e-9ad33c6b22e0"
+    }
+  ],
+  "cudaVersion": "12.8",
+  "writerId": "lsozd32f0je5akb1sw7k3b3p9fq5idda"
+}

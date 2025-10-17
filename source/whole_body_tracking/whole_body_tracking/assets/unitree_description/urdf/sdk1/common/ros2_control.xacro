@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:macro name="leg_joint_interface" params="prefix">
+        <joint name="${prefix}_HAA">
+            <command_interface name="stiffness">
+                <param name="initial_value">80</param>
+            </command_interface>
+            <command_interface name="damping">
+                <param name="initial_value">3</param>
+            </command_interface>
+            <state_interface name="position">
+                <param name="initial_value">0</param>
+            </state_interface>
+        </joint>
+        <joint name="${prefix}_HFE">
+            <command_interface name="stiffness">
+                <param name="initial_value">80</param>
+            </command_interface>
+            <command_interface name="damping">
+                <param name="initial_value">3</param>
+            </command_interface>
+            <state_interface name="position">
+                <param name="initial_value">0.9</param>
+            </state_interface>
+        </joint>
+        <joint name="${prefix}_KFE">
+            <command_interface name="stiffness">
+                <param name="initial_value">80</param>
+            </command_interface>
+            <command_interface name="damping">
+                <param name="initial_value">3</param>
+            </command_interface>
+            <state_interface name="position">
+                <param name="initial_value">-1.8</param>
+            </state_interface>
+        </joint>
+    </xacro:macro>
+</robot>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:include filename="$(find unitree_description)/urdf/sdk1/common/ros2_control.xacro"/>
+
+    <ros2_control name="MujocoSystem" type="system">
+        <hardware>
+            <plugin>mujoco_ros2_control/MujocoSystem</plugin>
+        </hardware>
+        <sensor name="base_imu">
+            <state_interface name="orientation.x"/>
+            <state_interface name="orientation.y"/>
+            <state_interface name="orientation.z"/>
+            <state_interface name="orientation.w"/>
+            <state_interface name="angular_velocity.x"/>
+            <state_interface name="angular_velocity.y"/>
+            <state_interface name="angular_velocity.z"/>
+            <state_interface name="linear_acceleration.x"/>
+            <state_interface name="linear_acceleration.y"/>
+            <state_interface name="linear_acceleration.z"/>
+        </sensor>
+        <xacro:leg_joint_interface prefix="LF"/>
+        <xacro:leg_joint_interface prefix="LH"/>
+        <xacro:leg_joint_interface prefix="RF"/>
+        <xacro:leg_joint_interface prefix="RH"/>
+    </ros2_control>
+
+</robot>

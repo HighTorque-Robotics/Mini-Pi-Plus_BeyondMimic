@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: whole_body_tracking
+Version: 0.1.0
+Summary: Extension Template for Isaac Lab
+Home-page: https://github.com/isaac-sim/IsaacLabExtensionTemplate.git
+Author: Isaac Lab Project Developers
+Maintainer: Isaac Lab Project Developers
+License: MIT
+Keywords: extension,template,isaaclab
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Isaac Sim :: 2023.1.1
+Classifier: Isaac Sim :: 5.0.0
+Requires-Python: >=3.10
+Requires-Dist: psutil
+Requires-Dist: onnxscript
+Requires-Dist: wandb>=0.19
+Requires-Dist: mujoco
+Requires-Dist: onnxruntime
+Dynamic: author
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: maintainer
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
