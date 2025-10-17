@@ -21,7 +21,7 @@
 - 将此代码库与 Isaac Lab 安装目录分开克隆（即，克隆到`IsaacLab`目录之外）：
 
 ```bash
-git clone https://github.com/xxxxxxxx.git
+git clone https://github.com/HighTorque-Robotics/Mini-Pi-Plus_BeyondMimic
 ```
 
 - 使用安装了 Isaac Lab 的 Conda 虚拟环境安装本项目，进入项目目录后，执行
