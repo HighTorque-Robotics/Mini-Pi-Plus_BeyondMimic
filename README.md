@@ -61,6 +61,8 @@ python scripts/bvh_to_robot.py --bvh_file MotionData/lafan1/{xxx}.bvh --robot pi
 python scripts/csv_cut.py --input_csv RetargetData/lafan1/csv/pi_plus/pi_plus_dance1_subject2.csv --output_csv RetargetData/lafan1/csv/pi_plus/{xxx}.csv --start_frame {number} --end_frame {number} --remove_frame_column --z_offset 0.00 --decimal_places 6
 
 # npz格式转换
+conda activate {your_env_isaaclab}
+
 python scripts/csv_to_npz.py --robot pi_plus --input_file source/motion/hightorque/pi_plus/csv/xxx.csv --input_fps 30 --output_name source/motion/hightorque/pi_plus/npz/{motion_name}
 #若不想加载图形化界面则添加参数 --headless
 
