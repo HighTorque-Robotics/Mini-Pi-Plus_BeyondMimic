@@ -32,13 +32,34 @@ python -m pip install -e source/whole_body_tracking
 
 ## 动作跟踪
 
+### 获取数据，GMR重定向数据
+使用GMR项目进行数据集的重定向，原项目地址: https://github.com/YanjieZe/GMR
+```
+# create conda env 为避免环境冲突等问题，重定向在一个独立的虚拟环境中进行
+conda deactivate
+conda create -n gmr python=3.10 -y
+conda activate gmr
+
+pip install -e GMR
+conda install -c conda-forge libstdcxx-ng -y
+```
+
+
+**注：如果没有使用本项目提供的GMR而是是下载的原链接内容，注意安装前修改setup.py 中 numpy==1.24.4。**
+
+**注：为了便于您使用高擎机电的机器人，我们在`source/motion`中提供了csv版本的重定向数据文件和转换好的npz格式文件模板供你使用，若需要重定向其他文件可以自行按照下方步骤执行**
+
 ### Motion Preprocessing & Registry Setup
 
-为了便于检查数据内容，我们在`source/motion`中提供了csv版本的重定向数据文件，在进行训练前需要转换为npz格式。
+为了便于检查数据内容，
 
 ```bash
-# 格式转换
-python scripts/csv_to_npz.py --robot pi_plus --input_file source/motion/hightorque/pi_plus/csv/pi_plus_right_big_kick_cut.csv --input_fps 30 --output_name source/motion/hightorque/pi_plus/npz/{motion_name}
+# 重定向：python scripts/bvh_to_robot.py --bvh_file MotionData/lafan1/{xxx}.bvh --robot pi_football --save_path RetargetData/lafan1/csv/pi_plus/{xxx}.csv --rate_limit
+
+# 裁剪：python scripts/csv_cut.py --input_csv RetargetData/lafan1/csv/pi_plus/pi_plus_dance1_subject2.csv --output_csv RetargetData/lafan1/csv/pi_plus/{xxx}.csv --start_frame {number} --end_frame {number} --remove_frame_column --z_offset 0.00 --decimal_places 6
+
+# npz格式转换
+python scripts/csv_to_npz.py --robot pi_plus --input_file source/motion/hightorque/pi_plus/csv/xxx.csv --input_fps 30 --output_name source/motion/hightorque/pi_plus/npz/{motion_name}
 #若不想加载图形化界面则添加参数 --headless
 
 # 数据播放
