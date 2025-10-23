@@ -1,0 +1,10 @@
+{
+    "documentId": "d364b4c22233fe6e37effabe",
+    "outputFormat": "urdf",
+    "assemblyName": "left_leg_OP3",
+    "robotName": "left_leg_OP3",
+    "mergeSTLs": "all",
+    "mergeSTLsCollisions": true,
+    "simplifySTLs": "all",
+    "maxSTLSize": 1
+}

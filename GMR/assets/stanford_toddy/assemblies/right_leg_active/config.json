@@ -1,0 +1,10 @@
+{
+    "documentId": "d364b4c22233fe6e37effabe",
+    "outputFormat": "urdf",
+    "assemblyName": "right_leg_active",
+    "robotName": "right_leg_active",
+    "mergeSTLs": "all",
+    "mergeSTLsCollisions": true,
+    "simplifySTLs": "all",
+    "maxSTLSize": 1
+}
